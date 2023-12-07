@@ -1,7 +1,16 @@
 import Image from 'next/image'
 
 export default function Home() {
+  async function saveCourse(formData: FormData){
+    "use server"
+    console.log("teste")
+  }
   return (
-   <h1>Teste Porta com BD</h1>
+    <div>
+      <form>
+                <button formAction={saveCourse} className="">Salvar</button>
+            </form>
+    </div>
+   
   )
 }
